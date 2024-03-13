@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantesAmpliados">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fotorestauranteampliado"
+        android:layout_width="353dp"
+        android:layout_height="244dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bonappetit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        app:shapeAppearanceOverlay="@style/radius"/>
+
+    <TextView
+        android:id="@+id/nombrerestauranteampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bon Appétit"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotorestauranteampliado"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/calificacionrestauranteampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★★★★★"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombrerestauranteampliado"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/descripcionrestauranteampliado"
+        android:layout_width="299dp"
+        android:layout_height="31dp"
+        android:text="Restaurante, pizzería, parrilla"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calificacionrestauranteampliado"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/direccionrestauranteampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección: Vereda La Selva, Jardín 056057"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionrestauranteampliado"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/btnVerMas2"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/cornflowerblue"
+        android:text="Reservar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/direccionrestauranteampliado"
+        app:layout_constraintVertical_bias="0.181" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

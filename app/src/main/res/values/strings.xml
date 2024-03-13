@@ -1,0 +1,9 @@
+<resources>
+    <string name="menu_1">Inglés</string>
+    <string name="menu_2">Español</string>
+    <string name="menu_3">Francés</string>
+    <string name="menu_4">Reseña</string>
+    <string name="menu_5">Acerca de</string>
+    <string name="app_name">Urrao</string>
+
+</resources>

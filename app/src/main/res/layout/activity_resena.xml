@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    tools:context=".Resena">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="107dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/historiatitle"
+        android:layout_width="331dp"
+        android:layout_height="80dp"
+        android:text="Conoce nuestra Historia"
+        android:textColor="@color/dodgerblue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/historia"
+        android:layout_width="337dp"
+        android:layout_height="187dp"
+        android:text="Urrao es un municipio de Colombia, localizado en la subregión suroeste del departamento de Antioquia. Limita por el norte con los municipios de Frontino y Abriaquí, por el este con los municipios de Abriaquí, Caicedo, Anzá, Betulia y Salgar, y por el sur y el oeste con Vigía del Fuerte y el departamento del Chocó. Es el segundo municipio más grande del departamento. Urrao es célebre por ser la cuna del ciclista profesional colombiano Rigoberto Urán."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historiatitle"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/historiapic"
+        android:layout_width="282dp"
+        android:layout_height="230dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/historiapic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historia"
+        app:layout_constraintVertical_bias="0.075"
+        app:shapeAppearanceOverlay="@style/radius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

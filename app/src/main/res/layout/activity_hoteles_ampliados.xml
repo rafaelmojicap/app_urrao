@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    tools:context=".HotelesAmpliados">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fotohotelampliado"
+        android:layout_width="353dp"
+        android:layout_height="244dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/gulupaecolodge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        app:shapeAppearanceOverlay="@style/radius" />
+
+    <TextView
+        android:id="@+id/nombrehotelampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Gulupa Ecolodge"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotohotelampliado"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/calificacionhotelampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★★★★★"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombrehotelampliado"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/descripcionhotelampliado"
+        android:layout_width="336dp"
+        android:layout_height="116dp"
+        android:text="Un refugio ecológico en Jardín con estacionamiento vigilado, internet gratuito, bañera de hidromasaje, cafetería, alquiler de bicicletas y servicio de masajes, aceptando mascotas."
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calificacionhotelampliado"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/preciohotelampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precios a partir de\nCOP 200.000\npor noche"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionhotelampliado"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/numerohotelampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono: 2312275"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/preciohotelampliado"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionhotelampliado"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/direccionhotelampliado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dir: Vereda La Selva,\nJardín 056057"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/preciohotelampliado"
+        app:layout_constraintTop_toBottomOf="@+id/numerohotelampliado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnVerMas3"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/cornflowerblue"
+        android:text="Reservar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preciohotelampliado"
+        app:layout_constraintVertical_bias="0.566" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
